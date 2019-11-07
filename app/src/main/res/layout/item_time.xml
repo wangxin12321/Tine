@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal" >
+
+    <!-- 线条部分 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="30dp" >
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="20dp"
+            android:background="#88000000" />
+
+        <com.example.administrator.tine.view.TimeView
+            android:src="@drawable/sharp_person_add_24"
+            android:id="@+id/timeView"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <View
+            android:layout_width="3dp"
+            android:layout_height="40dp"
+            android:background="#88000000" />
+    </LinearLayout>
+    <!-- 文字部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哈哈哈"
+            android:textColor="#ABABAB" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:text="时间"
+            android:textColor="#ABABAB" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_content"
+    android:background="@android:color/white"
+    tools:context=".activity.ContentActivity">
+
+    <com.example.administrator.tine.view.NoSrcollViewPager
+        android:id="@+id/cf_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.administrator.tine.view.NoSrcollViewPager>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="45dp"
+        android:paddingLeft="10dp"
+        app:menu_colorNormal="#0ff"
+        app:menu_colorPressed="#0fffffff"
+        app:menu_icon="@drawable/sharp_menu_24"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_singleLine="true"
+        app:menu_backgroundColor="#ccffffff">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#0ff"
+            app:fab_colorPressed="#0fffffff"
+            android:src="@drawable/sharp_mail_24"
+            app:fab_size="mini"
+            app:fab_label="主页" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#0ff"
+            app:fab_colorPressed="#0fffffff"
+            android:src="@drawable/sharp_mail_24"
+            app:fab_size="mini"
+            app:fab_label="日程" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#0ff"
+            app:fab_colorPressed="#0fffffff"
+            android:src="@drawable/sharp_people_24"
+            app:fab_size="mini"
+            app:fab_label="个人" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#0ff"
+            app:fab_colorPressed="#0fffffff"
+            android:src="@drawable/sharp_keyboard_backspace_24"
+            app:fab_size="mini"
+            app:fab_label="返回" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wxx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.administrator.tine.view.CustomCalendar
+            android:id="@+id/cal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_circle"
+
+            wxx:mCurrentBg="#6E6E6E"
+            wxx:mCurrentBgDashPath="@array/customCalendar_currentDay_bg_DashPath"
+            wxx:mCurrentBgStrokeWidth="1.5dip"
+
+            wxx:mLineSpac="12dip"
+            wxx:mMonthRowL="@drawable/custom_calendar_row_left"
+            wxx:mMonthRowR="@drawable/custom_calendar_row_right"
+            wxx:mMonthRowSpac="20dip"
+
+            wxx:mMonthSpac="10dip"
+            wxx:mSelectBg="#fe7f5c"
+            wxx:mSelectRadius="15dip"
+            wxx:mSelectTextColor="#ffffff"
+            wxx:mSelectWeekTextColor="#f67633"
+            wxx:mTextColorDay="#686768"
+            wxx:mTextColorMonth="#4b4b4b"
+            wxx:mTextColorPreFinish="#fc7451"
+
+            wxx:mTextColorPreNull="#cecdcd"
+            wxx:mTextColorPreUnFinish="#60ba8d"
+            wxx:mTextColorWeek="#9e9e9d"
+
+            wxx:mTextSizeDay="17sp"
+            wxx:mTextSizeMonth="20sp"
+            wxx:mTextSizePre="10sp"
+            wxx:mTextSizeWeek="17sp"
+            wxx:mTextSpac="8dip" />
+
+
+        <!-- <CalendarView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+
+</ScrollView>
