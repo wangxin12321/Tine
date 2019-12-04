@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--空布局-->
+    <TextView
+        android:id="@+id/tv_empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:drawableTop="@drawable/empty_add_task"
+        android:gravity="center"
+        android:text="没有数据"
+        android:textColor="#ff00"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

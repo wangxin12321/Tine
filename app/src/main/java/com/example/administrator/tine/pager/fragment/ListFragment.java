@@ -20,9 +20,12 @@ public class ListFragment extends BasePager {
 
     private RecyclerView mRecyclerView;
     private SchedulePagerAdapter mSchedulePagerAdapter;
+    private String title;
 
-    public ListFragment(Context context) {
+
+    public ListFragment(Context context,String title) {
         super(context);
+        this.title=title;
     }
 
 
@@ -38,11 +41,14 @@ public class ListFragment extends BasePager {
         View view=View.inflate(context,R.layout.schedule_recyclerview,null);
         mRecyclerView=view.findViewById(R.id.schedule_recyclerview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(context));
+
+        //从数据库获得当天的任务事件列表。title代表当天的日期
+
         List<Databean> list=new ArrayList<>();
         for (int i = 0; i < 24; i++) {
             list.add(new Databean( i+":00", "25/10"));
         }
-        mSchedulePagerAdapter=new SchedulePagerAdapter(context, list);
+        mSchedulePagerAdapter=new SchedulePagerAdapter(context, list,title);
 
         mRecyclerView.setAdapter(mSchedulePagerAdapter);
         return view;

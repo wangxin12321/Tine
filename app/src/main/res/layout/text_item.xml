@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.tine.view.cal.MyCalTextView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="40dp"
+android:textSize="18sp"
+android:gravity="center"
+android:id="@+id/text_calendar_day"
+android:layout_centerInParent="true"
+    >
+
+
+</com.example.administrator.tine.view.cal.MyCalTextView>

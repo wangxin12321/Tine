@@ -35,4 +35,15 @@
         <attr name="mLineSpac" format="dimension" />             <!--日期行间距-->
         <attr name="mTextSpac" format="dimension" />             <!--日期和任务次数字体上下间距-->
     </declare-styleable>
+
+
+    <declare-styleable name="MyCalTextView">
+
+        <attr name="dateformat" format="string"/>
+
+    </declare-styleable>
+
 </resources>
+
+
+

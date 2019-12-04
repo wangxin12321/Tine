@@ -14,6 +14,7 @@
             <item name="android:windowExitAnimation">@anim/popup_alpha_in</item>
         </style>
 
+    <style name="anim_popup_dir"></style>
 
 
 </resources>

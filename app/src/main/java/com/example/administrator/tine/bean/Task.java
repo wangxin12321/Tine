@@ -1,9 +1,15 @@
 package com.example.administrator.tine.bean;
 
+import java.util.Date;
+
 public class Task {
     public String time;
     public String date;
     public String task;
+
+    public Task(){
+
+    }
 
     public Task(String time, String date, String task) {
         this.time = time;

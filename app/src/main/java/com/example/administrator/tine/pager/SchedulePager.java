@@ -45,7 +45,7 @@ public class SchedulePager extends BasePager {
     private void initViewPager() {
         //获取最近5天时间
         String a,b,c,d,e;
-        SimpleDateFormat sf=new SimpleDateFormat("MM月dd日");
+        SimpleDateFormat sf=new SimpleDateFormat("yyyy-MM-dd");
         Calendar cal=Calendar.getInstance();
         a=sf.format(cal.getTime());
         cal.add(Calendar.DAY_OF_MONTH,1);
@@ -71,7 +71,7 @@ public class SchedulePager extends BasePager {
         listFragments=new ArrayList<>();
 
         for(int i=0;i<titles.size();i++){
-            listFragments.add(new ListFragment(context));
+            listFragments.add(new ListFragment(context,titles.get(i)));
         }
 
 

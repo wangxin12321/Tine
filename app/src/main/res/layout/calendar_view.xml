@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:src="@drawable/custom_calendar_row_left"
+            android:id="@+id/btnPre"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="24sp"
+            android:text="2019 7"
+            android:gravity="center"
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:src="@drawable/custom_calendar_row_right"
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="80dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_week_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Sun"
+            android:gravity="center" />
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Mon"
+            android:gravity="center" />
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tues"
+            android:gravity="center" />
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Wed"
+            android:gravity="center" />
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Thur"
+            android:gravity="center" />
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Fri"
+            android:gravity="center" />
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Sat"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_marginTop="20dp"
+        android:numColumns="7"
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></GridView>
+
+
+</LinearLayout>

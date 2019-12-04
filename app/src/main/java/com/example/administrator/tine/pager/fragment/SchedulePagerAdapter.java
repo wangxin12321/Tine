@@ -20,10 +20,12 @@ class SchedulePagerAdapter extends RecyclerView.Adapter<SchedulePagerAdapter.MyV
 
     private Context context;
     private List<Databean> list;
+    private String title;
 
-    public SchedulePagerAdapter(Context context, List<Databean> list) {
+    public SchedulePagerAdapter(Context context, List<Databean> list,String title) {
         this.context=context;
         this.list=list;
+        this.title=title;
     }
 
     @NonNull
